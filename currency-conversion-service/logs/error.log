@@ -1,0 +1,4 @@
+2020-05-25 22:15:12 [restartedMain] INFO  c.e.s.CurrencyConversionServiceApplication -
+				No active profile set, falling back to default profiles: default
+2020-05-25 22:15:20 [restartedMain] INFO  c.e.s.CurrencyConversionServiceApplication -
+				Started CurrencyConversionServiceApplication in 9.581 seconds (JVM running for 11333.746)

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="springbootjavabrain"/>
+<aop-project name="springBatch"/>
 <aop-project name="limits-service"/>
 <aop-project name="spring-cloud-config-server"/>
+<aop-project name="spring-security-jwt-example"/>
+<aop-project name="user-service"/>
 <aop-project name="currency-exchange-service"/>
 <aop-project name="dicovery-server"/>
 <aop-project name="netflix-zuul-api-gateway-server"/>

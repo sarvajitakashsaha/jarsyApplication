@@ -9,6 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,7 +28,7 @@ public class CurrencyExchangeController {
 
 	@GetMapping("/currency-exchange/from/{from}/to/{to}")
 	//@HystrixCommand(fallbackMethod = "getFallBackValue")
-	public ExchangeValue retriveExchangeValue( @PathVariable String from, @PathVariable String to) {
+	public ResponseEntity<ExchangeValue>retriveExchangeValue( @PathVariable String from, @PathVariable String to) {
 		// ExchangeValue exchangeValue = new ExchangeValue(1000L, from,
 		// to,BigDecimal.valueOf(65));
 		ExchangeValue exchangeValue = new ExchangeValue();
@@ -38,7 +40,7 @@ public class CurrencyExchangeController {
 		// }
 
 		logger.info("{EXCHANGE VAL IS >>>>>>>>>}", exchangeValue);
-		return exchangeValue;
+		return  new ResponseEntity<ExchangeValue>(exchangeValue,HttpStatus.FOUND);
 
 	}
 

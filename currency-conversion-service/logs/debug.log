@@ -1,0 +1,8 @@
+2020-05-25 22:16:36 [restartedMain] INFO  c.e.s.CurrencyConversionServiceApplication -
+				No active profile set, falling back to default profiles: default
+2020-05-25 22:16:45 [restartedMain] INFO  c.e.s.CurrencyConversionServiceApplication -
+				Started CurrencyConversionServiceApplication in 10.259 seconds (JVM running for 11418.34)
+2020-05-25 22:17:47 [http-nio-8100-exec-3] DEBUG c.e.s.CurrencyConversionController -
+				 ResponseEntity status code is for exchange [Content-Type:"application/json", Transfer-Encoding:"chunked", Date:"Mon, 25 May 2020 16:47:47 GMT", Keep-Alive:"timeout=60", Connection:"keep-alive"]
+2020-05-25 22:17:47 [http-nio-8100-exec-3] INFO  c.e.s.CurrencyConversionController -
+				CurrencyConversionBean [id=10001, from=USD, to=INR, conversionMultiple=65.00, quantity=null, totalCalculatedAmount=null, port=8000]

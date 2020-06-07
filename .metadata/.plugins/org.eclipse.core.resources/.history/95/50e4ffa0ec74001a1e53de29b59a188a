@@ -1,9 +1,0 @@
-package com.example.springboot;
-
-public class CurrencyConversionBean {
-	private Long  id;
-	private String from;
-	private String to;
-	private String conversion;
-
-}
