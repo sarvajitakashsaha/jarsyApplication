@@ -15,6 +15,7 @@ public class Processor implements ItemProcessor<UserBatch, UserBatch> {
 		DEPT_NAMES.put("1","java");
 		DEPT_NAMES.put("2","datastructure");
 		DEPT_NAMES.put("3","spring boot");
+		DEPT_NAMES.put("4","react js");
 	}
 
 	@Override
